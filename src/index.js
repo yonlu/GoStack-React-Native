@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { StatusBar } from 'react-native';
 
 import './config/ReactotronConfig';
+
+import Routes from './routes';
 
 export default class App extends Component {
   render() {
     return (
-      <View>
-        <Text>Hi</Text>
-      </View>
+      <>
+        <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
+        <Routes />
+      </>
     );
   }
 }
